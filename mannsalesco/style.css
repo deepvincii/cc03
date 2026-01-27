@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: roboto2;
+    src: url("./640f33ecc8347aec2955d7cc_EIGHTIESCOMEBACK-LTXCN.OTF");
+}
+
+body {
+    background-color: #f8f5df;
+    font-family: roboto2;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+.nav-menu svg {
+    fill: white;
+}
+
+.nav-logo {
+    font-size: 3rem;
+    display: flex;
+    margin-left: 0;
+    margin-right: auto;
+    flex-direction: column;
+    font-style: italic;
+    line-height: 0.8;
+}
+
+.nav-btn {
+    background-color: #fb652b;
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-ham {
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
+.hero-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 7rem;
+    line-height: 1;
+}
+
+.hero-header svg {
+    fill: orange !important;
+}
+
+.hero-subheader {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-l {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.scroll-r {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.hero-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    margin-top: 7rem;
+    border-radius: 300px;
+    width: 30%;
+}

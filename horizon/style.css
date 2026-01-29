@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "inter";
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("./BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.logo {
+}
+
+nav .links {
+    display: flex;
+    gap: 2rem;
+}
+
+nav .links button {
+    font-size: 1.1rem;
+}
+
+nav .links button:nth-child(1) {
+    border: 1px solid grey;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+nav button {
+    border: none;
+    background-color: white;
+}
+
+.book {
+    background-color: black;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    background-color: white;
+    padding: 0 2rem 0 2rem;
+    height: 60%;
+}
+
+.hero-c {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./photo-1693730071470-4aac6c29a1e5.avif");
+}
+
+.hero-c {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.unleash h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.unleash p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.unleash {
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.unleash button {
+    background-color: black;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+}
+
+.train {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.train .t {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.about {
+    width: 100%;
+    height: 30%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about button {
+    align-self: self-start;
+    background-color: rgb(253, 253, 253);
+    border: 0.5px solid rgb(202, 202, 202);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+
+.about .about-t {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.facts {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.game-mode,
+.group-lessons,
+.pro-coaches {
+    border-radius: 2rem;
+    border: 1px solid rgb(225, 225, 225);
+    width: 100%;
+}
+
+.game-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.9rem;
+    padding: 2rem;
+    background-color: #0d1a2d;
+}
+
+.game-mode span {
+    color: rgb(136, 136, 136);
+}
+
+.group-lessons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#0064c2, #52b1ef);
+}
+
+.group-lessons button {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 0.8rem 1.5rem;
+}
+
+.pro-coaches {
+    padding: 2rem;
+    background-color: #f7f8fc;
+}
+
+.pro-coaches h1 {
+    font-size: 2.5rem;
+}
+
+.pro-coaches h2 {
+    color: rgb(30, 30, 30);
+}
+
+.pro-coaches p {
+    color: rgb(81, 81, 81);
+}
+
+.stat {
+    gap: 1rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.game-mode img {
+    margin-bottom: 1rem;
+    filter: contrast(0);
+    width: 30px;
+}
+.lower {
+    display: flex;
+    padding-top: 2rem;
+    columns: rgb(77, 77, 77);
+    align-items: center;
+    gap: 1rem;
+}
+
+.lower p {
+    display: flex;
+    color: rgb(176, 176, 176);
+    font-size: 0.8rem;
+    display: flex;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #52b1ef;
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 6px;
+}
+
+.inner {
+    width: 20px;
+    height: 20px;
+    background-color: #52b1ef;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: start;
+}
+
+.circ {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.c {
+    display: flex;
+    gap: 0.4rem;
+}
+.c div {
+    background-color: #1da9f6;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.nums {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.more-facts {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    padding: 2rem;
+}
+
+.more {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pp {
+    font-size: 2rem;
+}
+
+.more-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+
+.in-more {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-lessons {
+    overflow: hidden;
+    position: relative;
+}
+
+.group-lessons img {
+    /* z-index: -1; */
+    position: absolute;
+    top: -20px;
+}
+
+.in-more h1 {
+    font-size: 2.5rem;
+}
+
+.in-more p {
+    color: gray;
+}

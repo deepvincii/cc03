@@ -41,6 +41,7 @@ body {
 }
 
 .top-nav {
+    z-index: 1110;
     position: fixed;
     left: 20%;
     height: 10vh;
@@ -92,14 +93,18 @@ body {
     border: none;
     /* font-size: 1.3rem; */
     background: linear-gradient(to left, #e00677, #fb7108);
+    box-shadow: -10px 10px 15px rgba(251, 113, 8, 0.275), 10px 10px 15px rgba(224, 6, 119, 0.281);
+    /* box-shadow: -10px -10px 10px black; */
+
 }
 
 .story {
-    height: 10vh;
+    height: 15vh;
     background-color: #f6f6f6;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    top: 10vh;
+    margin-top: 10vh;
+    /* top: 10vh; */
 }
 
 .story h1 {
@@ -108,7 +113,7 @@ body {
 }
 
 .stories {
-    width: 80%;
+    width: 100%;
     display: flex;
     gap: 1rem;
     padding: 20px 0 0 20px;
@@ -171,8 +176,8 @@ body {
 
 .feed {
     width: 100%;
-    position: fixed;
-    top: 33vh;
+    /* position: fixed; */
+    margin-top: 10vh;
 }
 
 .feed h1 {
@@ -182,11 +187,11 @@ body {
 
 .cols {
     margin-top: 20px;
-    margin: 20px;
-    width: 78%;
+    margin: 20px auto;
+    width: 96%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
 }
 
@@ -197,7 +202,7 @@ body {
     /* justify-content: center; */
     flex-direction: column;
     /* width: 30%; */
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: red; */
 }
 

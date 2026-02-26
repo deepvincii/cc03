@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="logo-container">
+                    <svg
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            class="_1ffvzhu3"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.61511 10.9978H12.5848C14.3845 10.9978 15.9421 10.4507 15.9421 8.44939C15.9421 6.86148 14.5745 6.52423 13.2595 6.52423H9.56608L8.61511 10.9978ZM24.3357 21.6949H30.6663L24.9533 25.6406L25.8771 31.8581L20.9272 28.1057L14.2842 32.0001L17.3902 25.4102C17.3902 25.4102 13.7775 21.6513 13.7803 21.6513C13.5374 21.3314 13.4563 20.5073 13.4563 20.1527C13.4563 19.7045 13.4849 19.2505 13.5155 18.7669C13.5503 18.2159 13.5875 17.6266 13.5875 16.9637C13.5875 15.3278 12.8632 14.4723 11.0925 14.4723H7.77269L6.32717 21.2249H1.33301L5.30462 2.66675H14.7029C18.1954 2.66675 20.861 3.52407 20.861 7.47735C20.861 10.2601 19.4884 12.2367 16.4605 12.6517V12.7051C17.8843 13.0428 18.4177 14.0037 18.4177 15.7946C18.4177 16.5095 18.3959 17.1369 18.3754 17.7271C18.3572 18.2511 18.34 18.7456 18.34 19.246C18.34 19.8873 18.507 20.9355 18.9277 21.6513H19.6215L23.3316 15.4672L24.3357 21.6949ZM23.5498 22.6019H27.7512L23.9634 25.217L24.6402 29.7765L20.9957 27.0111L16.3688 29.7218L18.4869 25.2341L15.9114 22.5578H20.1458L22.8244 18.093L23.5498 22.6019Z"
+                            fill="currentcolor"
+                        ></path>
+                        <path
+                            class="_1ffvzhu4"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.61511 10.9978H12.5848C14.3845 10.9978 15.9421 10.4507 15.9421 8.44939C15.9421 6.86148 14.5745 6.52423 13.2595 6.52423H9.56608L8.61511 10.9978ZM24.3357 21.6949H30.6663L24.9533 25.6406L25.8771 31.8581L20.9272 28.1057L14.2842 32.0001L17.3902 25.4102C17.3902 25.4102 13.7775 21.6513 13.7803 21.6513C13.5374 21.3314 13.4563 20.5073 13.4563 20.1527C13.4563 19.7045 13.4849 19.2505 13.5155 18.7669C13.5503 18.2159 13.5875 17.6266 13.5875 16.9637C13.5875 15.3278 12.8632 14.4723 11.0925 14.4723H7.77269L6.32717 21.2249H1.33301L5.30462 2.66675H14.7029C18.1954 2.66675 20.861 3.52407 20.861 7.47735C20.861 10.2601 19.4884 12.2367 16.4605 12.6517V12.7051C17.8843 13.0428 18.4177 14.0037 18.4177 15.7946C18.4177 16.5095 18.3959 17.1369 18.3754 17.7271C18.3572 18.2511 18.34 18.7456 18.34 19.246C18.34 19.8873 18.507 20.9355 18.9277 21.6513H19.6215L23.3316 15.4672L24.3357 21.6949ZM23.5498 22.6019H27.7512L23.9634 25.217L24.6402 29.7765L20.9957 27.0111L16.3688 29.7218L18.4869 25.2341L15.9114 22.5578H20.1458L22.8244 18.093L23.5498 22.6019Z"
+                            fill="currentcolor"
+                        ></path>
+                        <path
+                            class=""
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.61511 10.9978H12.5848C14.3845 10.9978 15.9421 10.4507 15.9421 8.44939C15.9421 6.86148 14.5745 6.52423 13.2595 6.52423H9.56608L8.61511 10.9978ZM24.3357 21.6949H30.6663L24.9533 25.6406L25.8771 31.8581L20.9272 28.1057L14.2842 32.0001L17.3902 25.4102C17.3902 25.4102 13.7775 21.6513 13.7803 21.6513C13.5374 21.3314 13.4563 20.5073 13.4563 20.1527C13.4563 19.7045 13.4849 19.2505 13.5155 18.7669C13.5503 18.2159 13.5875 17.6266 13.5875 16.9637C13.5875 15.3278 12.8632 14.4723 11.0925 14.4723H7.77269L6.32717 21.2249H1.33301L5.30462 2.66675H14.7029C18.1954 2.66675 20.861 3.52407 20.861 7.47735C20.861 10.2601 19.4884 12.2367 16.4605 12.6517V12.7051C17.8843 13.0428 18.4177 14.0037 18.4177 15.7946C18.4177 16.5095 18.3959 17.1369 18.3754 17.7271C18.3572 18.2511 18.34 18.7456 18.34 19.246C18.34 19.8873 18.507 20.9355 18.9277 21.6513H19.6215L23.3316 15.4672L24.3357 21.6949ZM23.5498 22.6019H27.7512L23.9634 25.217L24.6402 29.7765L20.9957 27.0111L16.3688 29.7218L18.4869 25.2341L15.9114 22.5578H20.1458L22.8244 18.093L23.5498 22.6019Z"
+                            fill="currentcolor"
+                        ></path>
+                    </svg>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Games </a>
+                    <a href="#">Newswire</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Downloads</a>
+                    <a href="#">Store</a>
+                    <a href="#">Support </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="btn-launcher">Get Launcher</a>
+                <a href="#" class="icon-link search-icon">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </a>
+                <a href="#" class="icon-link profile-icon">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path
+                            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="gradient-layer"></div>
+            <div class="hero-content">
+                <div class="game-brand">
+                    <img
+                        src="./images/game-logo.svg"
+                        alt="Grand Theft Auto VI"
+                        class="game-logo"
+                    />
+                </div>
+                <div>
+                    <h2>Grand Theft Auto VI</h2>
+                    <h1>Trailer 2</h1>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary">Watch Trailer</button>
+                        <button class="btn btn-secondary">
+                            Explore Leonida
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="newswire-section">
+            <div class="newswire-grid">
+                <div class="featured-post">
+                    <div class="featured-image-container">
+                        <img src="./images/ar1.png" alt="GTA VI Feature" />
+                    </div>
+                    <div class="featured-content">
+                        <span class="post-meta">Grand Theft Auto VI</span>
+                        <h3 class="featured-title">
+                            Grand Theft Auto VI is Now Set to Launch November
+                            19, 2026
+                        </h3>
+                        <div class="post-date">November 6, 2025</div>
+                    </div>
+                </div>
+
+                <div class="posts-list">
+                    <div class="post-item">
+                        <div class="post-thumbnail">
+                            <img src="./images/ar2.png" alt="GTA Online" />
+                        </div>
+                        <div class="post-content">
+                            <span class="post-meta">GTA Online</span>
+                            <h4 class="post-title">
+                                Get a Free Dewbauchee Champion Supercar and
+                                Early Access to the Grotti It...
+                            </h4>
+                            <div class="post-date">February 5, 2026</div>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <div class="post-thumbnail">
+                            <img src="./images/ar3.png" alt="GTA Online" />
+                        </div>
+                        <div class="post-content">
+                            <span class="post-meta">GTA Online</span>
+                            <h4 class="post-title">
+                                Break Up Rival Couples in the New Deadline Duet
+                                Mode for Triple Rewards
+                            </h4>
+                            <div class="post-date">February 5, 2026</div>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <div class="post-thumbnail">
+                            <img src="./images/ar4.png" alt="Red Dead Online" />
+                        </div>
+                        <div class="post-content">
+                            <span class="post-meta">Red Dead Online</span>
+                            <h4 class="post-title">
+                                Crime Pays in Red Dead Online with Triple
+                                Rewards on Blood Money...
+                            </h4>
+                            <div class="post-date">February 3, 2026</div>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <div class="post-thumbnail">
+                            <img src="./images/ar5.png" alt="Circoloco" />
+                        </div>
+                        <div class="post-content">
+                            <span class="post-meta">Circoloco Records</span>
+                            <h4 class="post-title">
+                                Baby Run from Jimi Jules Now Available on
+                                CircoLoco Records
+                            </h4>
+                            <div class="post-date">January 23, 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="support">
+            <div class="support-child">
+                <img src="./images/support-logo.svg" />
+                <p>
+                    Get help with issues, browse common solutions, view service
+                    status updates, and more.
+                </p>
+                <button class="get-support">Get Support</button>
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <div class="footer-top">
+                <div class="footer-links-primary">
+                    <a href="#">Contact</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Community Resources</a>
+                    <a href="#">Subscribe</a>
+                </div>
+                <div class="language-selector">
+                    <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                        ></path>
+                    </svg>
+                    <span>English</span>
+                    <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="footer-links-secondary">
+                    <a href="#">Corporate</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Do Not Sell or Share My Personal Information</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"
+                        ><svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <rect
+                                x="2"
+                                y="2"
+                                width="20"
+                                height="20"
+                                rx="5"
+                                ry="5"
+                            ></rect>
+                            <path
+                                d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                            ></path>
+                            <line
+                                x1="17.5"
+                                y1="6.5"
+                                x2="17.51"
+                                y2="6.5"
+                            ></line></svg
+                    ></a>
+                    <a href="#"
+                        ><svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                            <path
+                                d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"
+                            /></svg
+                    ></a>
+                    <a href="#"
+                        ><svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                            ></path>
+                            <polygon
+                                points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                            ></polygon></svg
+                    ></a>
+                    <a href="#"
+                        ><svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            ></path></svg
+                    ></a>
+                    <a href="#"
+                        ><svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"
+                            ></path></svg
+                    ></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-brand">Rockstar Games</div>
+                <div class="footer-locations">
+                    <span>New York</span>
+                    <span>London</span>
+                    <span>Paris</span>
+                    <span>Bogotá</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

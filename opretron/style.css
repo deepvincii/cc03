@@ -34,6 +34,11 @@ nav img {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    cursor: pointer;
+}
+
+.links :nth-child(1) {
+    color: grey;
 }
 
 nav button {
@@ -85,4 +90,28 @@ svg {
     align-items: end;
     gap: 2rem;
     transform: rotate(270deg);
+}
+
+#circ {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -23;
+}
+
+.circc {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -40%);
+    position: absolute;
+    z-index: -20;
+}
+
+.sidebar svg {
+    fill: black;
+    stroke: black;
 }
